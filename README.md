@@ -29,8 +29,9 @@ This project implements an AI-powered resume screener that classifies resumes in
 
 1. **Clone the repository:**
 
+git clone https://github.com/Exryz/resume-screening-bert.git
 
-2. **Install dependencies:**
+3. **Install dependencies:**
 
 pip install -r requirements.txt
 
