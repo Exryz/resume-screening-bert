@@ -29,6 +29,7 @@ This project implements an AI-powered resume screener that classifies resumes in
 
 1. **Clone the repository:**
 
+git clone https://github.com/Exryz/resume-screening-bert.git
 
 2. **Install dependencies:**
 
@@ -69,15 +70,6 @@ streamlit run app.py
 
 - Paste or upload resume text in the app.
 - The model predicts the most likely job category and shows class probabilities.
-
-## Project Structure
-.
-├── app.py # Streamlit web app
-├── train.py / notebook # Model training script or notebook
-├── resume_bert_model/ # Saved model and tokenizer
-├── requirements.txt
-└── UpdatedResumeDataSet.csv
-
 
 ## Results
 
