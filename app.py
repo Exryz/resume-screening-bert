@@ -3,10 +3,18 @@ from transformers import BertTokenizer, BertForSequenceClassification
 import torch
 import numpy as np
 
-# Load model and tokenizer
-model = BertForSequenceClassification.from_pretrained("resume_bert_model")
-tokenizer = BertTokenizer.from_pretrained("resume_bert_model")
-model.eval()
+# Hugging Face Hub repo path
+repo_id = "Exeryze/resume-screening-bert"
+
+# Cache model and tokenizer loading for performance
+@st.cache_resource
+def load_model():
+    model = BertForSequenceClassification.from_pretrained(repo_id)
+    tokenizer = BertTokenizer.from_pretrained(repo_id)
+    model.eval()
+    return model, tokenizer
+
+model, tokenizer = load_model()
 
 # Replace with your actual label names
 label_names = [
