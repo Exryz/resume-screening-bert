@@ -70,15 +70,6 @@ streamlit run app.py
 - Paste or upload resume text in the app.
 - The model predicts the most likely job category and shows class probabilities.
 
-## Project Structure
-.
-├── app.py # Streamlit web app
-├── train.py / notebook # Model training script or notebook
-├── resume_bert_model/ # Saved model and tokenizer
-├── requirements.txt
-└── UpdatedResumeDataSet.csv
-
-
 ## Results
 
 - **Validation Accuracy:** 98.45%
